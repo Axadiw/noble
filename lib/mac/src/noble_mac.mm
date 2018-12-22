@@ -245,8 +245,8 @@ Napi::Function NobleMac::GetClass(Napi::Env env) {
         NobleMac::InstanceMethod("discoverDescriptors", &NobleMac::DiscoverDescriptors),
         NobleMac::InstanceMethod("readValue", &NobleMac::ReadValue),
         NobleMac::InstanceMethod("writeValue", &NobleMac::WriteValue),
-        NobleMac::InstanceMethod("readHandle", &NobleMac::ReadValue),
-        NobleMac::InstanceMethod("writeHandle", &NobleMac::WriteValue),
+        NobleMac::InstanceMethod("readHandle", &NobleMac::readHandle),
+        NobleMac::InstanceMethod("writeHandle", &NobleMac::writeHandle),
         NobleMac::InstanceMethod("cleanUp", &NobleMac::CleanUp),
     });
 }
